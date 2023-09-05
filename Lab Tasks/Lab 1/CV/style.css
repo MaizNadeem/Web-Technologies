@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #edece3;
+}
+
+.background {
+    margin: 30px;
+    background: white;
+    padding: 50px;
+    min-width: 1000px;
+    max-width: 1000px;
+    box-shadow: 10px;
+}
+
+#name {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#role {
+    color: #777777;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 150px;
+    margin: 10px 0;
+}
+
+.details > p {
+    color: #777777;
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.details p i {
+    margin-right: 5px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.section h2 {
+    padding: 5px 0;
+    border-bottom: 2px solid black;
+}
+
+.section h4 {
+    margin: 10px 0;
+}
+
+.section p {
+    font-size: 14px;
+    color: #777777;
+    font-family: 'Manrope';
+}
+
+.section a {
+    font-size: 14px;
+    font-family: 'Manrope';
+    color: #5c5c5c;
+}
+
+.line-break {
+    margin: 10px 0;
+    border: 1px dotted #dbdbdb;
+}
+
+.left-column {
+    width: 55%;
+}
+
+.right-column {
+    width: 45%;
+}
+
