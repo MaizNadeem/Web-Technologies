@@ -22,7 +22,7 @@ p {
     padding: 50px;
     min-width: 1000px;
     max-width: 1000px;
-    box-shadow: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 #name {
@@ -41,7 +41,7 @@ p {
 .details {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 150px;
+    gap: 0 50px;
     margin: 10px 0;
 }
 
@@ -222,7 +222,6 @@ p {
 .links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .link {
     display: flex;
@@ -234,5 +233,10 @@ p {
     font-size: 24px;
 }
 .link h5 {
+    font-size: 18px;
     margin: 0;
+}
+
+.links .line-break {
+    margin: 5px 0;
 }
