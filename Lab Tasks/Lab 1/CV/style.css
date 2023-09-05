@@ -1,4 +1,10 @@
+html {
+    width: 11.68in;
+}
+
 body {
+    max-height: 11.69in;
+    max-width: 8.27in;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
@@ -17,32 +23,32 @@ p {
 }
 
 .background {
-    margin: 30px;
+    margin: 0px;
     background: white;
-    padding: 50px;
-    min-width: 1000px;
-    max-width: 1000px;
+    padding: 0.75in 0.5in;
+    max-height: 11.69in;
+    max-width: 8.27in;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 #name {
-    margin: 10px 0;
+    margin: 0 0 5px 0;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 24px;
 }
 
 #role {
     color: #777777;
-    margin: 0;
+    margin: 0 0 5px 0;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .details {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 50px;
-    margin: 10px 0;
+    gap: 5px 0.25in;
+    margin: 0 0 5px 0;
 }
 
 .details > p {
@@ -50,7 +56,6 @@ p {
     font-family: 'Manrope';
     font-weight: 600;
     font-size: 12px;
-    margin-bottom: 3px;
 }
 .details p i {
     margin-right: 5px;
@@ -59,11 +64,13 @@ p {
 .columns {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 0.25in;
 }
 
 .section h2 {
-    padding: 5px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0 0 5px 0;
     border-bottom: 2px solid black;
 }
 
@@ -99,7 +106,7 @@ p {
 }
 
 .line-break {
-    margin: 10px 0;
+    margin: 5px 0;
     border: 1px dotted #dbdbdb;
 }
 
