@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    margin: 8vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+}
+
+.column img {
+    width: 100%;
+    padding: 4px;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family:'Candara', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Candara', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .column {
+        flex: 50%
+    }
+}
+
+@media (max-width: 700px) {
+    .column {
+        flex: 75%
+    }
+}
+
+@media (max-width: 500px) {
+    .column {
+        flex: 100%
+    }
+}
