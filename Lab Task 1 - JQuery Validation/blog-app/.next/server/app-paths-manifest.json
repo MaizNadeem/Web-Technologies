@@ -1,4 +1,0 @@
-{
-  "/(primary)/page": "app/(primary)/page.js",
-  "/(custom)/login/page": "app/(custom)/login/page.js"
-}
