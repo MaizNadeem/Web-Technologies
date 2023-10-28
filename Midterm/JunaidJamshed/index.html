@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="./styles.css">
 
+    <link rel="icon" href="./assets/favicon.webp" type="image/x-icon">
+
     <title>J. Junaid Jamshed Official Website</title>
 </head>
 <body>
@@ -31,20 +33,22 @@
             <a href="#">CATALOGUE</a>
         </div>
     </div>
-    <div class="slider-container">
-        <div class="slider">
-            <div class="slide">
-                <img src="./assets/slides/image1.webp" alt="Banner Image 1">
+    <div class="slides">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="./assets/slides/image1.webp" alt="Banner Image 1">
+                </div>
+                <div class="slide">
+                    <img src="./assets/slides/image2.webp" alt="Banner Image 2">
+                </div>
+                <div class="slide">
+                    <img src="./assets/slides/image3.webp" alt="Banner Image 3">
+                </div>
             </div>
-            <div class="slide">
-                <img src="./assets/slides/image2.webp" alt="Banner Image 2">
-            </div>
-            <div class="slide">
-                <img src="./assets/slides/image3.webp" alt="Banner Image 3">
-            </div>
+            <button class="prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
         </div>
-        <button class="prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
-        <button class="next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
     </div>
     <section class="first-container">
         <div class="first-container-flex">
@@ -56,12 +60,12 @@
             <div class="second-column">
                 <div>
                     <img src="./assets/first/image2.webp" alt="First Image 2">
-                    <p class="p-top">Unstiched</p>
+                    <p class="p-top">Kurti</p>
                     <p class="p-bottom"><span>Shop Now</span></p>
                 </div>
                 <div>
                     <img src="./assets/first/image3.webp" alt="First Image 3">
-                    <p class="p-top">Unstiched</p>
+                    <p class="p-top">Stiched</p>
                     <p class="p-bottom"><span>Shop Now</span></p>
                 </div>
             </div>
@@ -70,25 +74,31 @@
     <section class="first-container">
         <div class="first-container-flex second-container-flex">
             <div class="first-column">
-                <img src="./assets/second/image1.webp" alt="Second Image 1">
-                <p class="p-top">Unstiched</p>
+                <img src="./assets/second/image3.webp" alt="Second Image 3">
+                <p class="p-top">Kurta</p>
                 <p class="p-bottom"><span>Shop Now</span</p>
             </div>
             <div class="second-column">
                 <div>
-                    <img src="./assets/second/image2.webp" alt="Second Image 2">
-                    <p class="p-top">Unstiched</p>
+                    <img src="./assets/second/image1.webp" alt="Second Image 1">
+                    <p class="p-top">Waistcoat</p>
                     <p class="p-bottom"><span>Shop Now</span></p>
                 </div>
                 <div>
-                    <img src="./assets/second/image3.webp" alt="Second Image 3">
-                    <p class="p-top">Unstiched</p>
+                    <img src="./assets/second/image2.webp" alt="Second Image 2">
+                    <p class="p-top">Kameez Shalwar</p>
                     <p class="p-bottom"><span>Shop Now</span></p>
                 </div>
             </div>
         </div>
     </section>
     <div class="main-container">
+        <div class="full-image">
+            <img src="./assets/full/image1.webp" alt="Full Image 1">
+        </div>
+        <div class="full-image">
+            <img src="./assets/full/image2.webp" alt="Full Image 2">
+        </div>
         <div class="newsletter">
             <h1>BE THE FIRST</h1>
             <p>New arrivals. Exclusive previews. First access to sales. Sign up to stay in the know.</p>
@@ -123,8 +133,14 @@
                 </div>
                 <div class="p-class">
                     <h1>FOLLOW US</h1>
-                    <p>Contact Us</p>
-                    <p>eshop@junaidjamshed.com</p>
+                    <div>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </footer>

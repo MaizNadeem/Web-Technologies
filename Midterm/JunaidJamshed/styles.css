@@ -3,6 +3,10 @@ html {
     font-family: 'Alata';
 }
 
+body {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -22,7 +26,7 @@ a {
 }
 
 .navbar.with-shadow {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container img {
@@ -45,6 +49,9 @@ a {
     display: none;
 }
 
+.slides {
+    margin: 0 20px;
+}
 
 .slider-container {
     position: relative;
@@ -76,8 +83,6 @@ a {
     z-index: 1;
     cursor: pointer;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
     border: none;
 }
 
@@ -167,6 +172,18 @@ a {
     margin: 0 50px;
 }
 
+.full-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-image img {
+    width: 75%;
+    border: 50px solid rgba(255, 218, 185, 0.2);
+    margin-bottom: 100px;
+}
+
 .newsletter {
     background-color: #232323;
     padding: 50px 0;
@@ -181,9 +198,22 @@ a {
     margin: 0;
 }
 
+.newsletter div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .newsletter input {
-    padding: 10px 20px;
+    padding: 9px 15px;
     width: 300px;
+    border: 1px solid gray;
+    font-family: 'Alata';
+    font-size: 16px;
+}
+
+.newsletter input:focus {
+    outline: none;
 }
 
 .newsletter button {
@@ -212,7 +242,23 @@ a {
     cursor: pointer;
 }
 
+.p-class div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-container i {
+    font-size: 24px;
+    color: #303030;
+    cursor: pointer;
+}
+
 .p-class p {
     margin: 0;
     margin-bottom: 5px;
+}
+
+.p-class p:hover {
+    color: black;
 }
