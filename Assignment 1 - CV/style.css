@@ -219,6 +219,10 @@ p {
     margin: 0;
 }
 
+.certifications-container p {
+    word-wrap: break-word;
+}
+
 .links {
     display: flex;
     flex-direction: column;
@@ -283,12 +287,13 @@ p {
         box-shadow: none;
     }
     #name {
-        font-size: 18pt;
+        font-size: 24pt;
         margin: 0;
     }
     #role {
-        font-size: 14pt;
+        font-size: 18pt;
         color: #777777;
+        margin: 5pt 0;
     }
     .section h2 {
         font-size: 14pt;
