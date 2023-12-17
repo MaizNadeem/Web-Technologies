@@ -1,4 +1,4 @@
-# GREAD READ - User Authentication
+# GREAD READ - JWT Authentication
 
 There is a unique implementation of Token-based authentication implemented in this project. Instead of storing the token on client-side, it is being retrieved from the database for more controlled access and for a specific scenario regarding "Reset Password" implementation.
 
@@ -47,7 +47,7 @@ const requestPasswordReset = async (email, protocol, hostname, port) => {
 
 A token is sent through request headers, preventing XSS and CSRF. Validated using this `jwtCheck` middleware, and then the route can be accessed. 
 
-Complete implementation can be found in `Real-Estate-Web/server/services/routes/userRoute.js`
+Complete implementation can be found in `Real Estate/server/services/routes/userRoute.js`
 
 ```javascript
 
