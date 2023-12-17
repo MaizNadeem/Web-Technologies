@@ -47,7 +47,7 @@ const requestPasswordReset = async (email, protocol, hostname, port) => {
 
 A token is sent through request headers, preventing XSS and CSRF. Validated using this `jwtCheck` middleware, and then the route can be accessed. 
 
-Complete implementation can be found in `Real-Estate-Web/server/services/routes/userRoute.js`
+Complete implementation can be found in `Real Estate/server/services/routes/userRoute.js`
 
 ```javascript
 
