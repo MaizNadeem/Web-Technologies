@@ -1,0 +1,6 @@
+.env
+.gcloudignore
+node_modules/
+service-account.json
+app.yaml
+dispatch.yaml
