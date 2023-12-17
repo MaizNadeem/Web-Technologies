@@ -1,6 +1,9 @@
 # GREAD READ - User Authentication
 
 Session-based user authentication has been implemented in this project.
+Here's how user info is stored in mongoDB database:
+
+![User Hashed Password](./HashedPassword.png)
 
 ### SIGN UP:
 
