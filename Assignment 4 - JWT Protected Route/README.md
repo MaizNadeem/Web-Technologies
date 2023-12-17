@@ -1,4 +1,4 @@
-# GREAD READ - User Authentication
+# GREAD READ - JWT Authentication
 
 There is a unique implementation of Token-based authentication implemented in this project. Instead of storing the token on client-side, it is being retrieved from the database for more controlled access and for a specific scenario regarding "Reset Password" implementation.
 
