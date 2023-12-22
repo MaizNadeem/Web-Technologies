@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.manrope-semibold {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+}
+
+.manrope-regular {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+#root {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+@media (min-width: 640px) {
+    .header-container {
+        position: relative;
+    }
+
+    .header-container::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        background-color: #8D5E20;
+        left: 2.5%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 639px) {
+    .header-container {
+        position: relative;
+    }
+    .header-container::before {
+        content: '';
+        position: absolute;
+        bottom: 12px;
+        height: 2px;
+        background-color: #8D5E20;
+        left: 4.5%;
+        width: 50%;
+    }
+}
