@@ -188,4 +188,57 @@ getRoute.get('/randomnotes', async (req, res) => {
     }
 });
 
+
+getRoute.post('/calculate', (req, res) => {
+    try {
+        const { operand1, operand2, operation, results: previousResults } = req.body;
+        if (!operand1 || !operand2 || !operation) {
+            res.json({ success: true, results: previousResults || [] });
+            return;
+        }
+
+        const num1 = parseFloat(operand1);
+        const num2 = parseFloat(operand2);
+
+        let result;
+        switch (operation) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                result = num1 / num2;
+                break;
+            default:
+                result = 'Invalid Operation';
+        }
+
+        const newEntry = { operand1, operand2, operation, result };
+        const isDuplicate = previousResults.some(entry =>
+            entry.operand1 === operand1 &&
+            entry.operand2 === operand2 &&
+            entry.operation === operation &&
+            entry.result === result
+        );
+
+        if (!isDuplicate) {
+            previousResults.push(newEntry);
+            res.json({ success: true, result, results: previousResults });
+        } else {
+            res.json({ success: false, message: 'Duplicate entry, not added to the results', results: previousResults });
+        }
+    } catch (error) {
+        console.error('Error in /calculate endpoint:', error.message);
+        res.status(500).json({ success: false, message: 'Internal server error' });
+    }
+});
+
+
+
+
 module.exports = { getRoute };

@@ -5,6 +5,7 @@ const session = require('express-session');
 const cors = require('cors');
 require('dotenv').config();
 const path = require('path');
+const cookieParser = require('cookie-parser');
 
 const { adminRoute } = require('./routes/adminRoute');
 const { loginRoute } = require('./routes/loginRoute');
@@ -14,6 +15,7 @@ const { getRoute } = require('./routes/getRoute');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());

@@ -41,6 +41,10 @@ const Header = () => {
         }, 500)
     };
 
+    const handleCalculatorPage = () => {
+        history('/calculator');
+    }
+
     const handleHomeClicked = () => {
         if (isReadingListActive) {
             toggleReadingList();
@@ -79,6 +83,12 @@ const Header = () => {
                             onClick={handleNotesButtonClicked}
                         >
                             {buttonText}
+                        </button>
+                        <button
+                            className="manrope-semibold bg-primary text-white text-[10px] py-[6px] px-[10px] rounded-md sm:px-6 sm:text-[14px] w-24 sm:w-36 sm:rounded-md shadow-lg hover:bg-primaryDark"
+                            onClick={handleCalculatorPage}
+                        >
+                            Calculator
                         </button>
                     </div>
                     {/* {isAtTop &&

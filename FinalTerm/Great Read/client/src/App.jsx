@@ -10,6 +10,7 @@ import { NotesProvider } from './context/NotesContext';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import Notes from './pages/Notes';
+import Calculator from './pages/Calculator';
 
 const queryClient = new QueryClient();
 
@@ -60,6 +61,7 @@ function App() {
                                 >
                                     <Route index element={<HomePage />} />
                                     <Route path="notes" element={<Notes />} />
+                                    <Route path="calculator" element={<Calculator />} />
                                 </Route>
                                 <Route
                                     path="*"

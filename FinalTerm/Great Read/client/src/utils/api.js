@@ -50,5 +50,29 @@ export async function getRandomBooks(categories, goal, books) {
         throw new Error(`Failed to fetch random books: ${error.message}`);
     }
 }
+export async function calculate(operand1, operand2, operation, previousResults = []) {
+    try {
+        const requestData = {
+            operand1: operand1,
+            operand2: operand2,
+            operation: operation,
+            results: previousResults,
+        };
+
+        // Check if any of the required fields is missing
+        if (!operand1 || !operand2 || !operation) {
+            // If missing, fetch the previous results instead of making a new calculation
+            const response = await api.post('/get/calculate', requestData);
+            return response.data;
+        }
+
+        const response = await api.post('/get/calculate', requestData);
+        return response.data;
+    } catch (error) {
+        throw new Error(`Failed to calculate: ${error.message}`);
+    }
+}
+
+
 
 export default api;
